@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VS_StockDisp" targetNamespace="http://tempuri.org/VS_StockDisp.xsd" xmlns:mstns="http://tempuri.org/VS_StockDisp.xsd" xmlns="http://tempuri.org/VS_StockDisp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionStringMedTrak" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionStringMedTrak (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionStringMedTrak.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VS_StockDispTableAdapter" GeneratorDataComponentClassName="VS_StockDispTableAdapter" Name="VS_StockDisp" UserDataComponentName="VS_StockDispTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionStringMedTrak (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT INDS_RowId, INDS_Remarks, INDS_Date, INDS_No, INDS_Time, INDS_Type, INDSI_Qty, INDSI_UCost, SSUSR_Name, ADJ_Code, ADJ_Desc, STOUT_Code, STOUT_Desc, CTUOM_Code, CTUOM_Desc, CTLOC_Code, CTLOC_Desc, CONR_Code, CONR_Desc, INCLB_PhyQty, INCLB_DirtyQty, INCIL_DirtyQty, INCIL_AvailQty, INCI_Code, INCI_Desc, INCI_ARCIM_DR, INDS_ReasonAdjustment, INDS_StOutType_DR, INCIB_No, INCIB_ExpDate, DEP_Code, INCIL_FreeStorageBin FROM SYSTEM.VS_StockDisp</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="INDS_RowId" DataSetColumn="INDS_RowId" />
+              <Mapping SourceColumn="INDS_Remarks" DataSetColumn="INDS_Remarks" />
+              <Mapping SourceColumn="INDS_Date" DataSetColumn="INDS_Date" />
+              <Mapping SourceColumn="INDS_No" DataSetColumn="INDS_No" />
+              <Mapping SourceColumn="INDS_Time" DataSetColumn="INDS_Time" />
+              <Mapping SourceColumn="INDS_Type" DataSetColumn="INDS_Type" />
+              <Mapping SourceColumn="INDSI_Qty" DataSetColumn="INDSI_Qty" />
+              <Mapping SourceColumn="INDSI_UCost" DataSetColumn="INDSI_UCost" />
+              <Mapping SourceColumn="SSUSR_Name" DataSetColumn="SSUSR_Name" />
+              <Mapping SourceColumn="ADJ_Code" DataSetColumn="ADJ_Code" />
+              <Mapping SourceColumn="ADJ_Desc" DataSetColumn="ADJ_Desc" />
+              <Mapping SourceColumn="STOUT_Code" DataSetColumn="STOUT_Code" />
+              <Mapping SourceColumn="STOUT_Desc" DataSetColumn="STOUT_Desc" />
+              <Mapping SourceColumn="CTUOM_Code" DataSetColumn="CTUOM_Code" />
+              <Mapping SourceColumn="CTUOM_Desc" DataSetColumn="CTUOM_Desc" />
+              <Mapping SourceColumn="CTLOC_Code" DataSetColumn="CTLOC_Code" />
+              <Mapping SourceColumn="CTLOC_Desc" DataSetColumn="CTLOC_Desc" />
+              <Mapping SourceColumn="CONR_Code" DataSetColumn="CONR_Code" />
+              <Mapping SourceColumn="CONR_Desc" DataSetColumn="CONR_Desc" />
+              <Mapping SourceColumn="INCLB_PhyQty" DataSetColumn="INCLB_PhyQty" />
+              <Mapping SourceColumn="INCLB_DirtyQty" DataSetColumn="INCLB_DirtyQty" />
+              <Mapping SourceColumn="INCIL_DirtyQty" DataSetColumn="INCIL_DirtyQty" />
+              <Mapping SourceColumn="INCIL_AvailQty" DataSetColumn="INCIL_AvailQty" />
+              <Mapping SourceColumn="INCI_Code" DataSetColumn="INCI_Code" />
+              <Mapping SourceColumn="INCI_Desc" DataSetColumn="INCI_Desc" />
+              <Mapping SourceColumn="INCI_ARCIM_DR" DataSetColumn="INCI_ARCIM_DR" />
+              <Mapping SourceColumn="INDS_ReasonAdjustment" DataSetColumn="INDS_ReasonAdjustment" />
+              <Mapping SourceColumn="INDS_StOutType_DR" DataSetColumn="INDS_StOutType_DR" />
+              <Mapping SourceColumn="INCIB_No" DataSetColumn="INCIB_No" />
+              <Mapping SourceColumn="INCIB_ExpDate" DataSetColumn="INCIB_ExpDate" />
+              <Mapping SourceColumn="DEP_Code" DataSetColumn="DEP_Code" />
+              <Mapping SourceColumn="INCIL_FreeStorageBin" DataSetColumn="INCIL_FreeStorageBin" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VS_StockDisp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VS_StockDisp" msprop:Generator_UserDSName="VS_StockDisp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VS_StockDisp" msprop:Generator_TableClassName="VS_StockDispDataTable" msprop:Generator_TableVarName="tableVS_StockDisp" msprop:Generator_TablePropName="_VS_StockDisp" msprop:Generator_RowDeletingName="VS_StockDispRowDeleting" msprop:Generator_RowChangingName="VS_StockDispRowChanging" msprop:Generator_RowEvHandlerName="VS_StockDispRowChangeEventHandler" msprop:Generator_RowDeletedName="VS_StockDispRowDeleted" msprop:Generator_UserTableName="VS_StockDisp" msprop:Generator_RowChangedName="VS_StockDispRowChanged" msprop:Generator_RowEvArgName="VS_StockDispRowChangeEvent" msprop:Generator_RowClassName="VS_StockDispRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INDS_RowId" msprop:Generator_ColumnVarNameInTable="columnINDS_RowId" msprop:Generator_ColumnPropNameInRow="INDS_RowId" msprop:Generator_ColumnPropNameInTable="INDS_RowIdColumn" msprop:Generator_UserColumnName="INDS_RowId" type="xs:double" />
+              <xs:element name="INDS_Remarks" msprop:Generator_ColumnVarNameInTable="columnINDS_Remarks" msprop:Generator_ColumnPropNameInRow="INDS_Remarks" msprop:Generator_ColumnPropNameInTable="INDS_RemarksColumn" msprop:Generator_UserColumnName="INDS_Remarks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32767" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDS_Date" msprop:Generator_ColumnVarNameInTable="columnINDS_Date" msprop:Generator_ColumnPropNameInRow="INDS_Date" msprop:Generator_ColumnPropNameInTable="INDS_DateColumn" msprop:Generator_UserColumnName="INDS_Date" type="xs:dateTime" />
+              <xs:element name="INDS_No" msprop:Generator_ColumnVarNameInTable="columnINDS_No" msprop:Generator_ColumnPropNameInRow="INDS_No" msprop:Generator_ColumnPropNameInTable="INDS_NoColumn" msprop:Generator_UserColumnName="INDS_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDS_Time" msprop:Generator_ColumnVarNameInTable="columnINDS_Time" msprop:Generator_ColumnPropNameInRow="INDS_Time" msprop:Generator_ColumnPropNameInTable="INDS_TimeColumn" msprop:Generator_UserColumnName="INDS_Time" type="xs:duration" />
+              <xs:element name="INDS_Type" msprop:Generator_ColumnVarNameInTable="columnINDS_Type" msprop:Generator_ColumnPropNameInRow="INDS_Type" msprop:Generator_ColumnPropNameInTable="INDS_TypeColumn" msprop:Generator_UserColumnName="INDS_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDSI_Qty" msprop:Generator_ColumnVarNameInTable="columnINDSI_Qty" msprop:Generator_ColumnPropNameInRow="INDSI_Qty" msprop:Generator_ColumnPropNameInTable="INDSI_QtyColumn" msprop:Generator_UserColumnName="INDSI_Qty" type="xs:double" minOccurs="0" />
+              <xs:element name="INDSI_UCost" msprop:Generator_ColumnVarNameInTable="columnINDSI_UCost" msprop:Generator_ColumnPropNameInRow="INDSI_UCost" msprop:Generator_ColumnPropNameInTable="INDSI_UCostColumn" msprop:Generator_UserColumnName="INDSI_UCost" type="xs:double" minOccurs="0" />
+              <xs:element name="SSUSR_Name" msprop:Generator_ColumnVarNameInTable="columnSSUSR_Name" msprop:Generator_ColumnPropNameInRow="SSUSR_Name" msprop:Generator_ColumnPropNameInTable="SSUSR_NameColumn" msprop:Generator_UserColumnName="SSUSR_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADJ_Code" msprop:Generator_ColumnVarNameInTable="columnADJ_Code" msprop:Generator_ColumnPropNameInRow="ADJ_Code" msprop:Generator_ColumnPropNameInTable="ADJ_CodeColumn" msprop:Generator_UserColumnName="ADJ_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADJ_Desc" msprop:Generator_ColumnVarNameInTable="columnADJ_Desc" msprop:Generator_ColumnPropNameInRow="ADJ_Desc" msprop:Generator_ColumnPropNameInTable="ADJ_DescColumn" msprop:Generator_UserColumnName="ADJ_Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="220" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STOUT_Code" msprop:Generator_ColumnVarNameInTable="columnSTOUT_Code" msprop:Generator_ColumnPropNameInRow="STOUT_Code" msprop:Generator_ColumnPropNameInTable="STOUT_CodeColumn" msprop:Generator_UserColumnName="STOUT_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STOUT_Desc" msprop:Generator_ColumnVarNameInTable="columnSTOUT_Desc" msprop:Generator_ColumnPropNameInRow="STOUT_Desc" msprop:Generator_ColumnPropNameInTable="STOUT_DescColumn" msprop:Generator_UserColumnName="STOUT_Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="220" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTUOM_Code" msprop:Generator_ColumnVarNameInTable="columnCTUOM_Code" msprop:Generator_ColumnPropNameInRow="CTUOM_Code" msprop:Generator_ColumnPropNameInTable="CTUOM_CodeColumn" msprop:Generator_UserColumnName="CTUOM_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTUOM_Desc" msprop:Generator_ColumnVarNameInTable="columnCTUOM_Desc" msprop:Generator_ColumnPropNameInRow="CTUOM_Desc" msprop:Generator_ColumnPropNameInTable="CTUOM_DescColumn" msprop:Generator_UserColumnName="CTUOM_Desc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="220" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTLOC_Code" msprop:Generator_ColumnVarNameInTable="columnCTLOC_Code" msprop:Generator_ColumnPropNameInRow="CTLOC_Code" msprop:Generator_ColumnPropNameInTable="CTLOC_CodeColumn" msprop:Generator_UserColumnName="CTLOC_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTLOC_Desc" msprop:Generator_ColumnVarNameInTable="columnCTLOC_Desc" msprop:Generator_ColumnPropNameInRow="CTLOC_Desc" msprop:Generator_ColumnPropNameInTable="CTLOC_DescColumn" msprop:Generator_UserColumnName="CTLOC_Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="220" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONR_Code" msprop:Generator_ColumnVarNameInTable="columnCONR_Code" msprop:Generator_ColumnPropNameInRow="CONR_Code" msprop:Generator_ColumnPropNameInTable="CONR_CodeColumn" msprop:Generator_UserColumnName="CONR_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONR_Desc" msprop:Generator_ColumnVarNameInTable="columnCONR_Desc" msprop:Generator_ColumnPropNameInRow="CONR_Desc" msprop:Generator_ColumnPropNameInTable="CONR_DescColumn" msprop:Generator_UserColumnName="CONR_Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="220" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCLB_PhyQty" msprop:Generator_ColumnVarNameInTable="columnINCLB_PhyQty" msprop:Generator_ColumnPropNameInRow="INCLB_PhyQty" msprop:Generator_ColumnPropNameInTable="INCLB_PhyQtyColumn" msprop:Generator_UserColumnName="INCLB_PhyQty" type="xs:double" />
+              <xs:element name="INCLB_DirtyQty" msprop:Generator_ColumnVarNameInTable="columnINCLB_DirtyQty" msprop:Generator_ColumnPropNameInRow="INCLB_DirtyQty" msprop:Generator_ColumnPropNameInTable="INCLB_DirtyQtyColumn" msprop:Generator_UserColumnName="INCLB_DirtyQty" type="xs:double" minOccurs="0" />
+              <xs:element name="INCIL_DirtyQty" msprop:Generator_ColumnVarNameInTable="columnINCIL_DirtyQty" msprop:Generator_ColumnPropNameInRow="INCIL_DirtyQty" msprop:Generator_ColumnPropNameInTable="INCIL_DirtyQtyColumn" msprop:Generator_UserColumnName="INCIL_DirtyQty" type="xs:double" minOccurs="0" />
+              <xs:element name="INCIL_AvailQty" msprop:Generator_ColumnVarNameInTable="columnINCIL_AvailQty" msprop:Generator_ColumnPropNameInRow="INCIL_AvailQty" msprop:Generator_ColumnPropNameInTable="INCIL_AvailQtyColumn" msprop:Generator_UserColumnName="INCIL_AvailQty" type="xs:double" minOccurs="0" />
+              <xs:element name="INCI_Code" msprop:Generator_ColumnVarNameInTable="columnINCI_Code" msprop:Generator_ColumnPropNameInRow="INCI_Code" msprop:Generator_ColumnPropNameInTable="INCI_CodeColumn" msprop:Generator_UserColumnName="INCI_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCI_Desc" msprop:Generator_ColumnVarNameInTable="columnINCI_Desc" msprop:Generator_ColumnPropNameInRow="INCI_Desc" msprop:Generator_ColumnPropNameInTable="INCI_DescColumn" msprop:Generator_UserColumnName="INCI_Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="220" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCI_ARCIM_DR" msprop:Generator_ColumnVarNameInTable="columnINCI_ARCIM_DR" msprop:Generator_ColumnPropNameInRow="INCI_ARCIM_DR" msprop:Generator_ColumnPropNameInTable="INCI_ARCIM_DRColumn" msprop:Generator_UserColumnName="INCI_ARCIM_DR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDS_ReasonAdjustment" msprop:Generator_ColumnVarNameInTable="columnINDS_ReasonAdjustment" msprop:Generator_ColumnPropNameInRow="INDS_ReasonAdjustment" msprop:Generator_ColumnPropNameInTable="INDS_ReasonAdjustmentColumn" msprop:Generator_UserColumnName="INDS_ReasonAdjustment" type="xs:double" minOccurs="0" />
+              <xs:element name="INDS_StOutType_DR" msprop:Generator_ColumnVarNameInTable="columnINDS_StOutType_DR" msprop:Generator_ColumnPropNameInRow="INDS_StOutType_DR" msprop:Generator_ColumnPropNameInTable="INDS_StOutType_DRColumn" msprop:Generator_UserColumnName="INDS_StOutType_DR" type="xs:double" minOccurs="0" />
+              <xs:element name="INCIB_No" msprop:Generator_ColumnVarNameInTable="columnINCIB_No" msprop:Generator_ColumnPropNameInRow="INCIB_No" msprop:Generator_ColumnPropNameInTable="INCIB_NoColumn" msprop:Generator_UserColumnName="INCIB_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCIB_ExpDate" msprop:Generator_ColumnVarNameInTable="columnINCIB_ExpDate" msprop:Generator_ColumnPropNameInRow="INCIB_ExpDate" msprop:Generator_ColumnPropNameInTable="INCIB_ExpDateColumn" msprop:Generator_UserColumnName="INCIB_ExpDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DEP_Code" msprop:Generator_ColumnVarNameInTable="columnDEP_Code" msprop:Generator_ColumnPropNameInRow="DEP_Code" msprop:Generator_ColumnPropNameInTable="DEP_CodeColumn" msprop:Generator_UserColumnName="DEP_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCIL_FreeStorageBin" msprop:Generator_ColumnVarNameInTable="columnINCIL_FreeStorageBin" msprop:Generator_ColumnPropNameInRow="INCIL_FreeStorageBin" msprop:Generator_ColumnPropNameInTable="INCIL_FreeStorageBinColumn" msprop:Generator_UserColumnName="INCIL_FreeStorageBin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VS_StockDisp" />
+      <xs:field xpath="mstns:INDS_RowId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

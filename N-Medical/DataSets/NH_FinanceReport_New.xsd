@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NH_FinanceReport_New" targetNamespace="http://tempuri.org/NH_FinanceReport_New.xsd" xmlns:mstns="http://tempuri.org/NH_FinanceReport_New.xsd" xmlns="http://tempuri.org/NH_FinanceReport_New.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NH_FinanceReport_NewTableAdapter" GeneratorDataComponentClassName="NH_FinanceReport_NewTableAdapter" Name="NH_FinanceReport_New" UserDataComponentName="NH_FinanceReport_NewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="[N-Med].dbo.NH_FinanceReport_New" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Cus_Group_Name, Cus_Code, Cus_Name, Invoice_Date, Invoice_Amount, ITEM_QTY, Invoice_Number, Invoice_Type, Invoice_Status, Sale_Area, Area_Name, Type, PO_Number, Cost_Center, Cost_Center_Name, Consumtion_Number, Invoice_Discount, Cus_Billing, Sale_Name, Cus_Term, Invoice_Ref, Customer_Type_Name FROM dbo.NH_FinanceReport_New</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cus_Group_Name" DataSetColumn="Cus_Group_Name" />
+              <Mapping SourceColumn="Cus_Code" DataSetColumn="Cus_Code" />
+              <Mapping SourceColumn="Cus_Name" DataSetColumn="Cus_Name" />
+              <Mapping SourceColumn="Invoice_Date" DataSetColumn="Invoice_Date" />
+              <Mapping SourceColumn="Invoice_Amount" DataSetColumn="Invoice_Amount" />
+              <Mapping SourceColumn="ITEM_QTY" DataSetColumn="ITEM_QTY" />
+              <Mapping SourceColumn="Invoice_Number" DataSetColumn="Invoice_Number" />
+              <Mapping SourceColumn="Invoice_Type" DataSetColumn="Invoice_Type" />
+              <Mapping SourceColumn="Invoice_Status" DataSetColumn="Invoice_Status" />
+              <Mapping SourceColumn="Sale_Area" DataSetColumn="Sale_Area" />
+              <Mapping SourceColumn="Area_Name" DataSetColumn="Area_Name" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="PO_Number" DataSetColumn="PO_Number" />
+              <Mapping SourceColumn="Cost_Center" DataSetColumn="Cost_Center" />
+              <Mapping SourceColumn="Cost_Center_Name" DataSetColumn="Cost_Center_Name" />
+              <Mapping SourceColumn="Consumtion_Number" DataSetColumn="Consumtion_Number" />
+              <Mapping SourceColumn="Invoice_Discount" DataSetColumn="Invoice_Discount" />
+              <Mapping SourceColumn="Cus_Billing" DataSetColumn="Cus_Billing" />
+              <Mapping SourceColumn="Sale_Name" DataSetColumn="Sale_Name" />
+              <Mapping SourceColumn="Cus_Term" DataSetColumn="Cus_Term" />
+              <Mapping SourceColumn="Invoice_Ref" DataSetColumn="Invoice_Ref" />
+              <Mapping SourceColumn="Customer_Type_Name" DataSetColumn="Customer_Type_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NH_FinanceReport_New" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="NH_FinanceReport_New" msprop:Generator_UserDSName="NH_FinanceReport_New">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NH_FinanceReport_New" msprop:Generator_TableClassName="NH_FinanceReport_NewDataTable" msprop:Generator_TableVarName="tableNH_FinanceReport_New" msprop:Generator_TablePropName="_NH_FinanceReport_New" msprop:Generator_RowDeletingName="NH_FinanceReport_NewRowDeleting" msprop:Generator_RowChangingName="NH_FinanceReport_NewRowChanging" msprop:Generator_RowEvHandlerName="NH_FinanceReport_NewRowChangeEventHandler" msprop:Generator_RowDeletedName="NH_FinanceReport_NewRowDeleted" msprop:Generator_UserTableName="NH_FinanceReport_New" msprop:Generator_RowChangedName="NH_FinanceReport_NewRowChanged" msprop:Generator_RowEvArgName="NH_FinanceReport_NewRowChangeEvent" msprop:Generator_RowClassName="NH_FinanceReport_NewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cus_Group_Name" msprop:Generator_ColumnVarNameInTable="columnCus_Group_Name" msprop:Generator_ColumnPropNameInRow="Cus_Group_Name" msprop:Generator_ColumnPropNameInTable="Cus_Group_NameColumn" msprop:Generator_UserColumnName="Cus_Group_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cus_Code" msprop:Generator_ColumnVarNameInTable="columnCus_Code" msprop:Generator_ColumnPropNameInRow="Cus_Code" msprop:Generator_ColumnPropNameInTable="Cus_CodeColumn" msprop:Generator_UserColumnName="Cus_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cus_Name" msprop:Generator_ColumnVarNameInTable="columnCus_Name" msprop:Generator_ColumnPropNameInRow="Cus_Name" msprop:Generator_ColumnPropNameInTable="Cus_NameColumn" msprop:Generator_UserColumnName="Cus_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Invoice_Date" msprop:Generator_ColumnVarNameInTable="columnInvoice_Date" msprop:Generator_ColumnPropNameInRow="Invoice_Date" msprop:Generator_ColumnPropNameInTable="Invoice_DateColumn" msprop:Generator_UserColumnName="Invoice_Date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Invoice_Amount" msprop:Generator_ColumnVarNameInTable="columnInvoice_Amount" msprop:Generator_ColumnPropNameInRow="Invoice_Amount" msprop:Generator_ColumnPropNameInTable="Invoice_AmountColumn" msprop:Generator_UserColumnName="Invoice_Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="ITEM_QTY" msprop:Generator_ColumnVarNameInTable="columnITEM_QTY" msprop:Generator_ColumnPropNameInRow="ITEM_QTY" msprop:Generator_ColumnPropNameInTable="ITEM_QTYColumn" msprop:Generator_UserColumnName="ITEM_QTY" type="xs:int" minOccurs="0" />
+              <xs:element name="Invoice_Number" msprop:Generator_ColumnVarNameInTable="columnInvoice_Number" msprop:Generator_ColumnPropNameInRow="Invoice_Number" msprop:Generator_ColumnPropNameInTable="Invoice_NumberColumn" msprop:Generator_UserColumnName="Invoice_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Invoice_Type" msprop:Generator_ColumnVarNameInTable="columnInvoice_Type" msprop:Generator_ColumnPropNameInRow="Invoice_Type" msprop:Generator_ColumnPropNameInTable="Invoice_TypeColumn" msprop:Generator_UserColumnName="Invoice_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Invoice_Status" msprop:Generator_ColumnVarNameInTable="columnInvoice_Status" msprop:Generator_ColumnPropNameInRow="Invoice_Status" msprop:Generator_ColumnPropNameInTable="Invoice_StatusColumn" msprop:Generator_UserColumnName="Invoice_Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sale_Area" msprop:Generator_ColumnVarNameInTable="columnSale_Area" msprop:Generator_ColumnPropNameInRow="Sale_Area" msprop:Generator_ColumnPropNameInTable="Sale_AreaColumn" msprop:Generator_UserColumnName="Sale_Area" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Area_Name" msprop:Generator_ColumnVarNameInTable="columnArea_Name" msprop:Generator_ColumnPropNameInRow="Area_Name" msprop:Generator_ColumnPropNameInTable="Area_NameColumn" msprop:Generator_UserColumnName="Area_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_Number" msprop:Generator_ColumnVarNameInTable="columnPO_Number" msprop:Generator_ColumnPropNameInRow="PO_Number" msprop:Generator_ColumnPropNameInTable="PO_NumberColumn" msprop:Generator_UserColumnName="PO_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost_Center" msprop:Generator_ColumnVarNameInTable="columnCost_Center" msprop:Generator_ColumnPropNameInRow="Cost_Center" msprop:Generator_ColumnPropNameInTable="Cost_CenterColumn" msprop:Generator_UserColumnName="Cost_Center" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost_Center_Name" msprop:Generator_ColumnVarNameInTable="columnCost_Center_Name" msprop:Generator_ColumnPropNameInRow="Cost_Center_Name" msprop:Generator_ColumnPropNameInTable="Cost_Center_NameColumn" msprop:Generator_UserColumnName="Cost_Center_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Consumtion_Number" msprop:Generator_ColumnVarNameInTable="columnConsumtion_Number" msprop:Generator_ColumnPropNameInRow="Consumtion_Number" msprop:Generator_ColumnPropNameInTable="Consumtion_NumberColumn" msprop:Generator_UserColumnName="Consumtion_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Invoice_Discount" msprop:Generator_ColumnVarNameInTable="columnInvoice_Discount" msprop:Generator_ColumnPropNameInRow="Invoice_Discount" msprop:Generator_ColumnPropNameInTable="Invoice_DiscountColumn" msprop:Generator_UserColumnName="Invoice_Discount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cus_Billing" msprop:Generator_ColumnVarNameInTable="columnCus_Billing" msprop:Generator_ColumnPropNameInRow="Cus_Billing" msprop:Generator_ColumnPropNameInTable="Cus_BillingColumn" msprop:Generator_UserColumnName="Cus_Billing" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sale_Name" msprop:Generator_ColumnVarNameInTable="columnSale_Name" msprop:Generator_ColumnPropNameInRow="Sale_Name" msprop:Generator_ColumnPropNameInTable="Sale_NameColumn" msprop:Generator_UserColumnName="Sale_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cus_Term" msprop:Generator_ColumnVarNameInTable="columnCus_Term" msprop:Generator_ColumnPropNameInRow="Cus_Term" msprop:Generator_ColumnPropNameInTable="Cus_TermColumn" msprop:Generator_UserColumnName="Cus_Term" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Invoice_Ref" msprop:Generator_ColumnVarNameInTable="columnInvoice_Ref" msprop:Generator_ColumnPropNameInRow="Invoice_Ref" msprop:Generator_ColumnPropNameInTable="Invoice_RefColumn" msprop:Generator_UserColumnName="Invoice_Ref" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Type_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_Type_Name" msprop:Generator_ColumnPropNameInRow="Customer_Type_Name" msprop:Generator_ColumnPropNameInTable="Customer_Type_NameColumn" msprop:Generator_UserColumnName="Customer_Type_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
